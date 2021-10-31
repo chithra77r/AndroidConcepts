@@ -39,9 +39,9 @@ public class FragmentDynamic extends Fragment {
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        Log.i(TAG, FRAGMENT_NAME + " onActivityCreated");
-        super.onActivityCreated(savedInstanceState);
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        Log.i(TAG, FRAGMENT_NAME + " onStart");
+        super.onViewCreated(view, savedInstanceState);
     }
 
     @Override

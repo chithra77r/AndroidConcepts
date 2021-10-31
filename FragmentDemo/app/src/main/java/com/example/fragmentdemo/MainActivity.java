@@ -30,10 +30,11 @@ public class MainActivity extends AppCompatActivity {
         buttonAddFragment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                addFragment();
+
             }
         });
         Log.i(TAG, ACTIVITY_NAME + " onCreate");
+        addFragment();
     }
 
     @Override
@@ -71,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.fragcontainer, dynamic, "demofragment");
-        fragmentTransaction.addToBackStack("fragmentStack1");
+//        fragmentTransaction.addToBackStack("fragmentStack1");
         fragmentTransaction.commit();
 
     }
