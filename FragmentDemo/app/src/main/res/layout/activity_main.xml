@@ -7,17 +7,16 @@
     tools:context=".MainActivity"
     android:background="@color/black">
 
-    <fragment
-
+    <FrameLayout
         android:id="@+id/fragcontainer"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:background="@color/white"
         android:padding="50dp"
-        android:name="com.example.fragmentdemo.FragmentDynamic"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@color/white"/>
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddFragment" />
 
     <Button
         android:id="@+id/buttonAddFragment"

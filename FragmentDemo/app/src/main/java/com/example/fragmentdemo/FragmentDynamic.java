@@ -14,7 +14,7 @@ import androidx.fragment.app.Fragment;
 public class FragmentDynamic extends Fragment {
 
     private static final String COMMON_TAG = "CombinedLifeCycle";
-    private static final String FRAGMENT_NAME = FragmentDynamic.class.getSimpleName();
+    private static final String FRAGMENT_NAME = "Fragment";
 
     private static final String TAG = COMMON_TAG;
 
